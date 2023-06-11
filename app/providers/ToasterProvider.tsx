@@ -1,11 +1,14 @@
-import React from 'react';
+'use client';
+import React, {FC} from 'react';
+import {Toaster} from "react-hot-toast";
 
-const TosterProvider = () => {
+interface ToasterProvidersProps {
+
+}
+const ToasterProvider:FC<ToasterProvidersProps> = () => {
     return (
-        <div>
-            
-        </div>
+        <Toaster/>
     );
 };
 
-export default TosterProvider;
+export default ToasterProvider;
